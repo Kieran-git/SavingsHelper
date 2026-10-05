@@ -1,7 +1,7 @@
 import { DarkTheme } from "@/constants/themes";
 import { useMemo } from "react";
 import { View, StyleSheet, Text } from "react-native";
-
+import "@/../global.css";
 
 type MainScreenProps = {
     theme: typeof DarkTheme;
@@ -18,8 +18,8 @@ const MainScreen = ({
 
 
     return (
-        <View style={styles.container}>
-            <Text>Savings Helper</Text>
+        <View className="flex-1 items-center justify-start p-10 w-full bg-[#22303c]"> 
+            <Text className="text-4xl color-[#fff]">Savings Helper</Text>
         </View>
     )
 };
